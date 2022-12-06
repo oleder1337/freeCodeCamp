@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title> Tech Survey </title>
+  <link rel="stylesheet" href="styles.css">
+  <body>
+   
+    <div class="intro">
+      <h1 id="title">What do you think about the Tech Industry ?</h1>
+      <div class="description">
+      <p id="description"> Help us identify missing crucial Elements in the Tech Industry which are blocking the development and exploration of current tech</p>
+      </div>
+    </div>
+
+    
+    <form action="https://survey-form.freecodecamp.rocks" method="post" id="survey-form">
+
+    <div class="IAM">
+      <fieldset>
+        <h2> Who are you ? </h2>
+        <table>
+          <tr>
+            <td>
+              <label for="name" id="name-label">Enter your Name</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="name" placeholder="John Doe" required/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email" id="email-label">Enter your email</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="email" id="email" placeholder="John@Doe.com" required/>
+            </td>
+          <tr>
+            <td>
+              <label for="number" id="number-label">Enter your Age</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="number" id="number" min="13" max="120" placeholder="99" required/>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+
+    <div class="help">
+      <fieldset>
+      <h2> Help us!</h2>
+      <p> Tell us how interested you are in Tech generally</p>
+
+       <div class="radioselect">
+          <input type="radio" id="affin" name="tech-affinity" value="affin"/><span>Very interested</span>
+          
+          <label for="affin" class="radiolabel"> Very interested</label>
+          </div>
+        
+        <div class="radioselect">
+          <input type="radio" id="moderate" name="tech-affinity" value="moderate"/><span>moderate</span>
+          <label for="moderate" class="radiolabel"> moderate</label>
+          
+      
+        </div>
+        <div class="radioselect">
+          <input type="radio" id="not-at-all" name="tech-affinity" value="not-at-all" /><span>not at all</span>
+          <label for="not-at-all" class="radiolabel"> not at all</label>
+          
+        
+        </div>
+
+          
+
+     
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown"> Tell us the year of release for your current phone
+          <div class="select-wrapper">
+          <select id="dropdown">
+            <option value="0"> Please select a year </option>
+            <option value="1">2022</option>
+            <option value="2">2021</option>
+            <option value="3">2020</option>
+            <option value="4">2019</option>
+            <option value="5">2018</option>
+            <option value="6">2017</option>
+            <option value="7">older</option>
+          </select>
+        </div>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="freetext"> What do you think is the biggest missed Opportunity of the current Tech industry ?
+        <textarea id="freetext" placeholder="Share your thoughts!"></textarea>
+        </label>
+      </fieldset>
+    </div>
+
+
+    <div class="end">
+      <fieldset>
+        <div class="survey">
+        <table>
+          <tr >
+            <td>
+              <label for="moresurveys"> I agree to receive more offers for new open surveys</label>
+            </td>
+            <td>
+            <input type="checkbox" id="moresurveys" value="moresurveys"/>
+            </td>
+          </tr>
+
+
+        
+          <tr class="seperator" >
+            <td colspan="2">  
+            </td>
+          </tr>
+         
+          
+  
+          </div>
+          <div class="terms">
+            <tr>
+              <td>
+          <label for="terms-and-service">I agree to the terms and service </label>
+              </td>
+              <td>
+                <input type="checkbox" value="terms" id="terms-and-service" /> 
+              </td>
+            </tr>
+         
+        </table>
+         </div>
+
+      </fieldset>
+    </div>
+    <div class="submitFrame">
+    <div class="btnHolder">
+    <input type="submit" value="Submit" id="submit">
+    </div>
+    </div>
+    </form>
+  
+  </body>
+  
+</html>
